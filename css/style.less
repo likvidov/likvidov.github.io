@@ -70,7 +70,7 @@ body{
                 font-size: 50px;
                 line-height: 59px;
                 margin-top: 0px;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
             }
 
             .hero-description{
@@ -79,18 +79,6 @@ body{
                 max-width: 420px;
                 margin-bottom: 38px;
             }            
-        }
-
-        .hero-avatar{
-            width: 389px;
-            height: 389px;
-            background: #fff;
-            border-radius: 50%;
-            background-image: url(/img/avatar.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border: 13px solid #fff;
         }
     }
 }
@@ -105,6 +93,7 @@ body{
         font-weight: bold;
         font-size: 36px;
         line-height: 42px;
+        text-align: center;
     }
 }
 
@@ -166,125 +155,40 @@ body{
         
         .projects-slide{
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
             .project-image{
                 max-height: 280px;
                 max-width: 340px;
             }
 
-            .project-text{
-                display:flex;
-                flex-basis: 60%;
-                flex-wrap: wrap;
-                .project-title{
-                    flex-basis: 100%;
-                    font-weight: bold;
-                    font-size: 24px;
-                    line-height: 28px;
-                    margin: 0;
-                    margin-bottom: 41px;
-                }
-
-                .project-time, .project-cost{
-                    flex-basis: 50%;
-                    margin-bottom: 44px;
-                }
-
-                .project-feedback{
-                    flex-basis: 100%;
-                }
-
-                .project-time, .project-cost, .project-feedback{
-                    display: flex;
-                    align-items: flex-start;
-                    .project-subtitle{
-                        margin: 0;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: 21px;
-                        margin-bottom: 7px;
-                    }
-                    .project-paragraph{
-                        margin: 0;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 150%;
-                    }
-                    .project-icon{
-                        margin-right: 16px;
-                    }
-                }
+            .project-title{
+                flex-basis: 100%;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                margin: 0;
+                margin-bottom: 41px;
             }
-        }
+        }   
     }
 }
+
 
 .contacts-block{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 10px;
-    .contacts-form{
-        background: #FFFFFF;
-        box-shadow: -5px 5px 0px #FFC41D;
-        border-radius: 5px;
-        max-width: 380px;
-        padding-top: 40px;
-        padding-left: 48px;
-        padding-right: 48px;
-        padding-bottom: 49px;
-        .form-title{
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            color: #000000;
-            margin: 0;
-            margin-bottom: 29px;
-        }
-    
-        .input{
-            background: #F8F8F8;
-            border: none;
-            box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
-            border-radius: 5px;
-            padding: 18px 20px;
-            padding-left: 50px;
-            width: 100%;
-            font-size: 14px;
-            line-height: 28px;  
-        }
-    
-        .input-name{
-            margin-bottom: 17px;
-            background-image: url('../img/user-icon.svg');
-            background-repeat: no-repeat;
-            background-position: center left 20px;
-        }
-    
-        .input-phone{
-            margin-bottom: 26px;
-            background-image: url('../img/phone-icon.svg');
-            background-repeat: no-repeat;
-            background-position: center left 20px;
-        }
-    
-        .form-button{
-            width: 100%;
-        }
-    }
+    text-align: center;
 
     .contacts-text{
-        flex-basis: 50% ;
         .contacts-data{
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 42px;
-
             .contacts-phone, .contacts-email{
-                flex-basis: 50%;
                 margin-bottom: 53px;
             }
             .contacts-social{
@@ -302,35 +206,14 @@ body{
             .contacts-link{
                 text-decoration: none;
                 color: inherit;
-                margin-right: 37px;
+                margin-right: 15px;
+                margin-left: 15px;
                 &:hover{
                     text-decoration: underline;
                 }
             }
         }
-        
-        .contacts-policy{
-            margin-top: 72px;
-            font-size: 15px;
-            line-height: 18px;
-            text-decoration-line: underline;
-            color: #A5A5A5;
-        }
     }
-}
-
-
-@media (max-width: 1100px){
-    .hero{
-        .hero-content{
-            .hero-avatar{
-                width: 300px;
-                height: 300px;
-                border-width: 10px;
-            }
-        }
-    }
-    
 }
 
 @media (max-width: 1000px){
@@ -365,11 +248,6 @@ body{
         padding-bottom: 20px;
         .hero-content{
             flex-direction: column;
-            .hero-avatar{
-                order: 0;
-                margin-bottom: 17px;
-            }
-
             .hero-text{
                 order: 1;
                 text-align: center;
@@ -462,12 +340,6 @@ body{
                     font-size: 14px;
                     line-height: 24px;
                 }
-            }
-
-            .hero-avatar{
-                width: 200px;
-                height: 200px;
-                border-width: 4px;
             }
         }
     }

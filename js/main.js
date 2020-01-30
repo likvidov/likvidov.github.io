@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () =>{
           el: '.projects-pagination',
           bulletClass: 'projects-bullet',
           bulletActiveClass: 'projects-bullet-active',
-          clickable: true
+          clickable: true,
+        }, 
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
   });
 
