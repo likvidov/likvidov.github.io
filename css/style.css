@@ -69,6 +69,14 @@ body {
   max-width: 420px;
   margin-bottom: 38px;
 }
+.hero .hero-content .hero-img {
+  background-image: url(../img/photo.jpg);
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid gray;
+}
 .section {
   padding-top: 64px;
   padding-bottom: 92px;
