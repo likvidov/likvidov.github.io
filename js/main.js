@@ -9,22 +9,18 @@ document.addEventListener('DOMContentLoaded', () =>{
 
   new WOW().init();
 
-  var mySwiper = new Swiper('.swiper-container', {
-      speed: 400,
-      spaceBetween: 100,
-      pagination: {
-          el: '.projects-pagination',
-          bulletClass: 'projects-bullet',
-          bulletActiveClass: 'projects-bullet-active',
-          clickable: true,
-        }, 
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+  var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
   });
-
-
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -38,5 +34,5 @@ document.addEventListener('DOMContentLoaded', () =>{
     //const inputValue = input.value.trim();
   }
 
-  sendBtn.addEventListener('click', sendEmail);
+  // sendBtn.addEventListener('click', sendEmail);
 });

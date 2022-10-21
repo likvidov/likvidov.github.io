@@ -139,8 +139,7 @@ body {
   justify-content: center;
 }
 .project .projects-slider .projects-slide .project-image {
-  max-height: 280px;
-  max-width: 340px;
+  max-width: 100%;
 }
 .project .projects-slider .projects-slide .project-title {
   flex-basis: 100%;
@@ -184,6 +183,7 @@ body {
 .contacts-block .contacts-text .contacts-data .contacts-link:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 1000px) {
   .project .projects-slider .projects-slide {
     flex-direction: column;
